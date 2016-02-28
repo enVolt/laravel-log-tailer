@@ -1,25 +1,34 @@
 {
-    "name": "rap2hpoutre/laravel-log-viewer",
-    "description": "A Laravel log reader",
-    "license": "MIT",
-    "keywords": ["log", "log-reader", "log-viewer", "logging"],
-    "authors": [
-        {
-            "name": "rap2hpoutre",
-            "email": "raphael@ornikar.com"
-        }
-    ],
-    "require": {
-        "php": ">=5.4.0",
-        "illuminate/support": "4.2.*|5.*"
+  "autoload" : {
+    "psr-0" : {
+      "Rap2hpoutre\\LaravelLogViewer\\" : "src\/"
     },
-    "autoload": {
-        "classmap": [
-            "src/controllers"
-        ],
-        "psr-0": {
-            "Rap2hpoutre\\LaravelLogViewer\\": "src/"
-        }
+    "classmap" : [
+      "src\/controllers"
+    ]
+  },
+  "authors" : [
+    {
+      "name" : "rap2hpoutre",
+      "email" : "raphael@ornikar.com"
     },
-    "minimum-stability": "stable"
+    {
+      "name" : "Ashwani Agarwal",
+      "email" : "ashwani.a@outlook.com"
+    }
+  ],
+  "keywords" : [
+    "log",
+    "log-reader",
+    "log-viewer",
+    "logging"
+  ],
+  "minimum-stability" : "stable",
+  "description" : "A Laravel log Tailer",
+  "license" : "MIT",
+  "name" : "envolt/laravel-log-tailer",
+  "require" : {
+    "php" : ">=5.4.0",
+    "illuminate\/support" : "4.2.*|5.*"
+  }
 }
